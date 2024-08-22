@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#quote-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#quote {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #quote-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    #author {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1007px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    main {
+        height: 60vh;
+    }
+
+    #quote-container {
+        width: 80%;
+    }
+
+    #quote {
+        font-size: 20px;
+    }
+
+    #author {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+}
